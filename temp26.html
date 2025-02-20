@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div>
+      <img
+        src="https://img.freepik.com/premium-photo/3d-funny-soccer-ball-cartoon-sport-competition_1034098-14985.jpg"
+        id="ball" width="180px"/>
+    </div>
+    <script>
+        ball.style.position = "absolute";
+        let t = 0 
+
+        function f1() {
+            t++ 
+            ball.style.top = t + "px";
+            if (t < 500) {
+            setTimeout(f1, 9);
+            }
+
+        } 
+        f1()
+        
+
+    </script>
+
+  </body>
+</html>
